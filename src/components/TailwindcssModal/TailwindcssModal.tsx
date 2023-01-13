@@ -1,6 +1,6 @@
 import React from 'react';
-import './main.css';
 import close from '../../assets/close.png';
+import './main.css';
 
 type Props = {
   children?: React.ReactNode;
