@@ -1,0 +1,1 @@
+export { TailwindcssModal } from './TailwindcssModal';
