@@ -1,3 +1,27 @@
+
+<h2>How to use</h2>
+
+update your tailwind.config.js file with this code
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  purge: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tailwindcss-modal/**/*.{js,mjs,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+
+src/MyComponent.jsx
+
+```
 import { TailwindcssModal, useModal } from "tailwindcss-modal";
 
 function App() {
@@ -31,3 +55,4 @@ function App() {
 }
 
 export default App;
+```
