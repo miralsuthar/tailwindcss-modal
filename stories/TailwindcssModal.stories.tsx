@@ -23,14 +23,11 @@ const Template: ComponentStory<typeof TailwindcssModal> = args => {
         onClose={onClose}
         closeButton={true}
       >
+        <h1>Tailwind css Modal</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rem
-          quos nemo pariatur laudantium sunt quisquam non ipsam, ut dolore.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-          consectetur.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+          excepturi harum tempore aliquam dolorum corrupti eum quam distinctio
+          temporibus est.
         </p>
       </TailwindcssModal>
     </>

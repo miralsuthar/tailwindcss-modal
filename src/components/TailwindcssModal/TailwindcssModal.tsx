@@ -35,7 +35,7 @@ export const TailwindcssModal: React.FC<Props> = ({
       ></div>
       <div
         aria-label="modal-box"
-        className={`${className} transition w-10/12 md:w-9/12 lg:w-5/12 duration-300 ease-in-out relative -translate-x-2/4 -translate-y-2/4 p-8 bg-white rounded-md  ${
+        className={`${className} transition w-10/12 md:w-9/12 lg:w-fit duration-300 ease-in-out relative -translate-x-2/4 -translate-y-2/4 p-8 bg-white rounded-md  ${
           isOpen ? 'block' : 'hidden'
         } `}
       >
