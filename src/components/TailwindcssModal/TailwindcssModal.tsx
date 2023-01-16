@@ -9,8 +9,6 @@ type Props = {
   onClose: () => void;
   closeButton?: boolean;
   closeOnBackdropClick?: boolean;
-  backdropStyles?: string;
-  bluriness?: number;
 };
 
 export const TailwindcssModal: React.FC<Props> = ({
@@ -24,11 +22,11 @@ export const TailwindcssModal: React.FC<Props> = ({
   return (
     <div
       aria-label="modal"
-      className="absolute top-2/4 left-2/4 max-h-screen max-w-screen"
+      className="absolute top-2/4 left-2/4 z-10 max-h-screen max-w-screen"
     >
       <div
         aria-label="backdrop"
-        className={`fixed blur-md backdrop-blur-xl inset-0 top-0 left-0 w-screen h-screen bg-gray-800 opacity-30 ${
+        className={`fixed backdrop-blur-lg inset-0 top-0 left-0 w-screen h-screen bg-gray-400 opacity-30 ${
           isOpen ? 'block' : 'hidden'
         }`}
         onClick={closeOnBackdropClick ? onClose : undefined}
