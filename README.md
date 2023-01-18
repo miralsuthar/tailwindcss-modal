@@ -1,5 +1,5 @@
 
-<h2>How to use</h2>
+## How to use
 
 update your tailwind.config.js file with this code
 
@@ -56,3 +56,15 @@ function App() {
 
 export default App;
 ```
+
+## Props
+
+| name   | type  | required | description     |
+|--------|-------|----------|-----------------|
+| isOpen | boolean| isRequired |This props is passed to see if modal is open or not.|
+| onClose | function | isRequired |This function is used to close the modal if it is open.|
+| closeButton | boolean | not required | This boolean is passed to show the close in modal. |
+| closeOnBackdropClick | not required |boolean | This boolean is passed to close the modal when we click on backdrop of modal.|
+| className | string | not required |This prop is passed to add additional style to your modal. |
+
+
