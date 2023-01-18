@@ -65,6 +65,7 @@ export default App;
 | onClose | function | isRequired |This function is used to close the modal if it is open.|
 | closeButton | boolean | not required | This boolean is passed to show the close in modal. |
 | closeOnBackdropClick | not required |boolean | This boolean is passed to close the modal when we click on backdrop of modal.|
+| backdropBlur | not required | 'none', 'sm', 'md', 'lg' | This prop helps with adding backdrop blur property for your modal. |
 | className | string | not required |This prop is passed to add additional style to your modal. |
 
 
