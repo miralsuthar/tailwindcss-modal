@@ -75,6 +75,7 @@
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
+    "framer-motion": "^8.5.0",
     "husky": "^8.0.3",
     "identity-obj-proxy": "^3.0.0",
     "postcss": "^8.4.21",

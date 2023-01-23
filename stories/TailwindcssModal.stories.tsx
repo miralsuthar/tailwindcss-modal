@@ -17,12 +17,7 @@ const Template: ComponentStory<typeof TailwindcssModal> = args => {
       >
         open modal
       </button>
-      <TailwindcssModal
-        {...args}
-        isOpen={isOpen}
-        onClose={onClose}
-        closeButton={true}
-      >
+      <TailwindcssModal {...args} isOpen={isOpen} onClose={onClose}>
         <h1>Tailwind css Modal</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
@@ -35,6 +30,10 @@ const Template: ComponentStory<typeof TailwindcssModal> = args => {
 };
 
 const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  closeButton: true,
+  closeOnBackdropClick: true,
+  backdropBlur: 'lg',
+};
 
 export { Primary };
